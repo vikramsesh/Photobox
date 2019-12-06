@@ -421,9 +421,21 @@ if __name__ == "__main__":
     import sys
     if (sys.flags.interactive != 1):
         data_dir = os.path.abspath(os.curdir) + "/Pictures"
+        log_dir = os.path.abspath(os.curdir)+"/Development/Logs"
+        
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
-        logging.basicConfig(filename='program.log',format='%(asctime)s %(message)s', level=logging.DEBUG)
+        if not os.path.exists(log_dir):
+            os.makedirs(log_dir)
+        
+        log_file = log_dir+"/program.log"
+        print(log_file)
+        i=0
+        while os.path.exists(log_file):
+            i+=1
+            log_file = log_dir + "/program"+str(i)+".log"    
+        
+        logging.basicConfig(filename=log_file,format='%(asctime)s %(message)s', level=logging.DEBUG)
           
         callback_obj = gp.check_result(gp.use_python_logging())
         app = QtWidgets.QApplication(sys.argv)
