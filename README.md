@@ -1,4 +1,3 @@
-$sudo apt-get install --reinstall pcmanfm
 #PhotoBox fixture
 
 The program helps users control the capture images and removes the guesswork of the camera settings for specific food loads used. It was designed to keep the camera settings and the file naming metrics consistent across multiple fixtures. It also removes the tedious process of sharing the images with multiple users by sending the image to the user's email address once the image is captured. This was implemented to aid personel with minimum technical knowledge about programming or camera operations.
@@ -22,7 +21,7 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-Give the example
+$sudo apt-get install --reinstall pcmanfm
 ```
 
 And repeat
