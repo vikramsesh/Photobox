@@ -1,9 +1,7 @@
-The program helps set camera parameters, capture images and store them. It is also capable of attaching the images captured to the email ID mentioned. Created for Image Processing Applications.
-
 $sudo apt-get install --reinstall pcmanfm
-# Project Title
+#PhotoBox fixture
 
-One Paragraph of project description goes here
+The program helps users control the capture images and removes the guesswork of the camera settings for specific food loads used. It was designed to keep the camera settings and the file naming metrics consistent across multiple fixtures. It also removes the tedious process of sharing the images with multiple users by sending the image to the user's email address once the image is captured. This was implemented to aid personel with minimum technical knowledge about programming or camera operations.
 
 ## Getting Started
 
@@ -61,9 +59,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [gPhoto2 & libgphoto2](http://www.gphoto.org/) - Library used to control the camera parameters and retrieve image from the DSLR
+* [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download5) - GUI for the python script
+* [omxplayer](https://github.com/popcornmix/omxplayer) - Camera LiveView
 
 ## Contributing
 
