@@ -81,8 +81,15 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
+Testing gphoto2 and camera interaction
+```
+$gphoto2 --auto-detect
+```
+Testing Live View - Setting resolution using --win. Ctrl+c or q to quit omxplayer
+```
+$mkfifo fifo.mjpg
+$gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "0 0 820 525" fifo.mjpg
+```
 ### Break down into end to end tests
 
 Explain what these tests test and why
