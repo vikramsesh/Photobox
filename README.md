@@ -1,6 +1,6 @@
-## PhotoBox fixture
+# PhotoBox fixture
 
-The program helps users control the capture images and removes the guesswork of the camera settings for specific food loads used. It was designed to keep the camera settings and the file naming metrics consistent across multiple fixtures. It also removes the tedious process of sharing the images with multiple users by sending the image to the user's email address once the image is captured. This was implemented to aid personel with minimum technical knowledge about programming or camera operations.
+The program helps users control the capture images and removes the guesswork of the camera settings for specific food loads used. It was designed to keep the camera settings and the file naming metrics consistent across multiple fixtures. It also removes the tedious process of sharing the images with multiple users by sending the image to the user's email address once the image is captured. This software was created to aid personel with minimum technical knowledge about programming or camera operations.
 
 ## Getting Started
 
@@ -102,7 +102,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Vikram Seshadri**  
+* **[Vikram Seshadri](https://github.com/vikramsesh) **  
 
 ## License
 
