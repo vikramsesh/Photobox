@@ -100,6 +100,10 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
+## What to do if you have a problem
+
+If you find a problem in the UI or with any dependencies or general bug reports, then please report it on the GitHub "issues" page (https://github.com/vikramsesh/Photobox/issues)
+
 ## Authors
 
 **[Vikram Seshadri](https://github.com/vikramsesh)**
