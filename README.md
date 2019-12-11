@@ -84,6 +84,7 @@ End with an example of getting some data out of the system or using it for a lit
 Testing gphoto2 and camera interaction
 ```
 $gphoto2 --auto-detect
+$gphoto2 --capture-image-and-download
 ```
 Testing Live View - Setting resolution using --win. Ctrl+c or q to quit omxplayer
 ```
@@ -108,7 +109,8 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Make sure all the prerequisites are installed. 
+Python3 should be the default.
 
 ## What to do if you have a problem
 
