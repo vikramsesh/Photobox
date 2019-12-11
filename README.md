@@ -98,14 +98,13 @@ $gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "0 0 820 
 
 ## Deployment
 
-Make sure all the prerequisites are installed. 
-Python3 should be the default.
-
-Make the script executable
-*Open the terminal Ctrl+Alt+T and follow the steps listed below
+* Make sure all the prerequisites are installed. 
+* Python3 should be the default.
+* Make the script executable
+Open the terminal Ctrl+Alt+T and follow the steps listed below
 ```
-cd <folder to execute scripts from> (eg./home/pi/Desktop)
-chmod +x cameraui_v<x>.py
+$cd <folder to execute scripts from> (eg.$ cd /home/pi/Desktop)
+$chmod +x cameraui_v<x>.py
 ```
 You are all set to enjoy the program. CLICK AWAY!
 
