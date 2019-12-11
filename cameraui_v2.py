@@ -370,8 +370,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # Change to your own account information
         # Account Information        
-        gmail_user = 'sharkninjatestfixtures@gmail.com' # Email to send from. (MUST BE GMAIL)
-        gmail_password = '$h@rkNinj@' 
+        gmail_user = ' ' # Email to send from. (MUST BE GMAIL)
+        gmail_password = ' ' 
         smtpserver = smtplib.SMTP('smtp.gmail.com', 587) # Server to use (gmail server).
        
         smtpserver.ehlo()  # Says 'hello' to the server
