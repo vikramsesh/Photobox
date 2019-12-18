@@ -22,7 +22,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowFlags(QtCore.Qt.CustomizeWindowHint)
         
         self.pushButton_close.clicked.connect(self.closeOMX)
-
             
     def closeOMX(self):
         process = subprocess.Popen(cmd, shell = True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
