@@ -16,13 +16,10 @@ class MainWindow(QtWidgets.QMainWindow):
         QtWidgets.QMainWindow.__init__(self)        
         super(MainWindow, self).__init__()
         self.ui = uic.loadUi("uiFiles/liveviewclose.ui", self)
-        self.move(840,325)
+        self.move(840,375)
         
-        # enable custom window hint
-        self.setWindowFlags(self.windowFlags() | QtCore.Qt.CustomizeWindowHint)
-
-        # disable (but not hide) close button
-        self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint)
+        # Disable title bar
+        self.setWindowFlags(QtCore.Qt.CustomizeWindowHint)
         
         self.pushButton_close.clicked.connect(self.closeOMX)
 
