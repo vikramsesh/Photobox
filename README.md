@@ -75,14 +75,6 @@ For v3, also copy liveview.py to the same folder.
 chmod +x cameraui_v<x>.py
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
 Testing gphoto2 and camera interaction
