@@ -14,6 +14,9 @@ Adding Error Pop-up screen
 
 Update: December 4,2019
 Fixed Other screen pop up and Live view close
+
+Update: January 8,2020
+Added Photo Grid in LiveView for Centering Objects
  
 """
 
