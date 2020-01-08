@@ -48,7 +48,7 @@ pic_dir = ""
 name_dir = "" 
 new_dir = ""
 receiver_email = [""]
-bashCommand = """gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "840 525 1680 1050" fifo.mjpg & python liveview.py"""
+bashCommand = """gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "840 525 1680 1050" --alpha 230 fifo.mjpg & python liveview.py"""
 
 class MainWindow(QtWidgets.QMainWindow):
     
@@ -405,8 +405,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # Change to your own account information
         # Account Information        
-        gmail_user = ' ' # Email to send from. (MUST BE GMAIL)
-        gmail_password = ' ' # Gmail password.
+        gmail_user = 'sharkninjatestfixtures@gmail.com' # Email to send from. (MUST BE GMAIL)
+        gmail_password = '$h@rkNinj@' # Gmail password.
         smtpserver = smtplib.SMTP('smtp.gmail.com', 587) # Server to use.
        
         smtpserver.ehlo()  # Says 'hello' to the server
