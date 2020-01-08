@@ -16,7 +16,7 @@ class MainWindow(QtWidgets.QMainWindow):
         QtWidgets.QMainWindow.__init__(self)        
         super(MainWindow, self).__init__()
         self.ui = uic.loadUi("uiFiles/liveviewclose.ui", self)
-        self.move(840,375)
+        self.move(840,385)
         
         # Disable title bar
         self.setWindowFlags(QtCore.Qt.CustomizeWindowHint)
