@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>840</width>
-    <height>160</height>
+    <height>691</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -60,6 +60,32 @@
      <size>
       <width>70</width>
       <height>70</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>140</y>
+      <width>840</width>
+      <height>525</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>PhotoGrid.png</normaloff>PhotoGrid.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>840</width>
+      <height>525</height>
      </size>
     </property>
    </widget>
