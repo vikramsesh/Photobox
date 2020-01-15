@@ -38,7 +38,11 @@ $cd <extracted file location>
 $./configure
 $make
 $sudo make install
+```
+```
+$cd
 $sudo apt-get install gphoto2
+$pip install gphoto2
 ```
 * qt5 and QtCreator
 ```
