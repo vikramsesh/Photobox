@@ -18,6 +18,9 @@ Fixed Other screen pop up and Live view close
 Update: January 8,2020
 Added Photo Grid in LiveView for Centering Objects
 
+Update: January 27,2020
+Filename check and fixed LiveView crashing issue
+
 """
 
 import sys
@@ -29,6 +32,7 @@ import gphoto2 as gp
 from validate_email import validate_email
 from omxplayer.player import OMXPlayer
 import subprocess
+import re
 
 # email
 import smtplib
@@ -146,8 +150,9 @@ class MainWindow(QtWidgets.QMainWindow):
         iso_cfg.set_value('100')
         aperture_cfg.set_value('4.5')
         shutter_cfg.set_value('1/40')
-
+        
         self.camera.set_config(cfg)
+        
 
     def camera_capture(self):
         global filename, pic_dir, name_dir, new_dir
@@ -170,10 +175,11 @@ class MainWindow(QtWidgets.QMainWindow):
             path = self.camera.capture(gp.GP_CAPTURE_IMAGE)
             camera_file = self.camera.file_get(
                 path.folder, path.name, gp.GP_FILE_TYPE_NORMAL)
+            
 
             # Save Image
             camera_file.save(new_dir)
-
+            
             # free camera
             self.camera.exit()
             time.sleep(1)
@@ -230,13 +236,16 @@ class MainWindow(QtWidgets.QMainWindow):
         # User input data
         # name*
         self.name = str(self.ui.lineEdit_name.text())
+        
         if self.name == "" or self.name.lower() == "your name here":
             messageString = "Enter Name\n"
             flag = 1
 
         else:
             flag = 0
-
+        
+        self.name = re.sub(r"([^\w])","",self.name)
+        
         # email
         self.email = str(self.ui.lineEdit_email.text())
         if self.email == "" or self.email == "Email1, Email2 ...":
@@ -312,6 +321,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 filename += "_" + str(self.filenameextra)
 
             filename += "_" + str(time.strftime("%m.%d.%Y"))
+            filename = re.sub(r"([^\w])","_",filename)
 
     def other_click(self):
         if str(self.ui.comboBox_foodload.currentText()) == "Other":
@@ -524,12 +534,11 @@ if __name__ == "__main__":
             os.makedirs(log_dir)
 
         log_file = log_dir + "/program.log"
-        print(log_file)
         i = 0
         while os.path.exists(log_file):
             i += 1
             log_file = log_dir + "/program" + str(i) + ".log"
-
+        print("Log File:" + log_file)
         logging.basicConfig(
             filename=log_file,
             format='%(asctime)s %(message)s',
