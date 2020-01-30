@@ -6,7 +6,7 @@ import subprocess
 from PyQt5 import QtWidgets, uic, QtCore
 from PyQt5.QtCore import Qt
 
-cmd = """kill $(pgrep omxplayer) & pkill -f gphoto2"""
+cmd = """kill $(pgrep omxplayer) & pkill -f gphoto2 & gphoto2 --reset"""
 
 
 class MainWindow(QtWidgets.QMainWindow):
