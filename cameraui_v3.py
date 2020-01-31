@@ -526,8 +526,8 @@ if __name__ == "__main__":
     import sys
     if (sys.flags.interactive != 1):
         data_dir = os.path.abspath(os.curdir) + "/Pictures"
-        log_dir = os.path.abspath(os.curdir) + "/Development/Logs"
-
+        log_dir = os.path.abspath(os.curdir) + "/Logs"
+        print(os.curdir)
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
         if not os.path.exists(log_dir):
