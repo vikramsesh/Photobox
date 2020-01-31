@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Photobox
 Path=/home/pi/Desktop
-Exec=/home/pi/Desktop/Development/PhotoBox/cameraui_v3.py
+Exec=/home/pi/Desktop/Photobox/cameraui_v3.py
 Type=Application
 StartupNotify=false
 Terminal=false
-Icon=/home/pi/Desktop/Development/PhotoBox/Photobox Logo.png
+Icon=/home/pi/Desktop/Photobox/Photobox Logo.png
