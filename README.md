@@ -15,7 +15,7 @@ Check python version using the following command in the terminal
 ```
 $python --version
 ```
-If version is not python3 or above, follow instructions on [Python3 default](https://linuxconfig.org/how-to-change-from-default-to-alternative-python-version-on-debian-linux) to change default python to Python3 if its not already version 3.
+If version is not python3 or above, follow instructions on [Python3 default](https://unix.stackexchange.com/questions/410579/change-the-python3-default-version-in-ubuntu) to change default python to Python3 if its not already version 3.
 
 ### Prerequisites
 
