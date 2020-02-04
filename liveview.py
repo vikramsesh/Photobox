@@ -15,7 +15,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.do_init = QtCore.QEvent.registerEventType()
         QtWidgets.QMainWindow.__init__(self)
         super(MainWindow, self).__init__()
-        self.ui = uic.loadUi("uiFiles/liveviewclose.ui", self)
+        self.ui = uic.loadUi("/home/pi/Desktop/Photobox/uiFiles/liveviewclose.ui", self)
         self.move(840, 385)
 
         # Disable title bar

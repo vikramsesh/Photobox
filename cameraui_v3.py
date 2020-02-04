@@ -33,6 +33,7 @@ from validate_email import validate_email
 from omxplayer.player import OMXPlayer
 import subprocess
 import re
+import liveview
 
 # email
 import smtplib
@@ -56,7 +57,7 @@ pic_dir = ""
 name_dir = ""
 new_dir = ""
 receiver_email = [""]
-bashCommand = """gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "840 525 1680 1050" --alpha 230 fifo.mjpg & python liveview.py"""
+bashCommand = """gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "840 525 1680 1050" --alpha 230 fifo.mjpg & python /home/pi/Desktop/Photobox/liveview.py"""
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -65,7 +66,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.do_init = QtCore.QEvent.registerEventType()
         QtWidgets.QMainWindow.__init__(self)
         super(MainWindow, self).__init__()
-        self.ui = uic.loadUi("uiFiles/cameracontrols.ui", self)
+        self.ui = uic.loadUi("/home/pi/Desktop/Photobox/uiFiles/cameracontrols.ui", self)
         self.move(0, 40)
 
         # defer full initialisation (slow operation) until gui is visible
