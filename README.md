@@ -67,16 +67,10 @@ $sudo apt-get upgrade
 
 ### Installing
 
-* cameraui_v1.py - Basic software for capturing an image and storing it. 
-* cameraui_v2.py - Email addition for Image capture and email feature.
-* cameraui_v3.py - LiveView addition to preview the image before capture.
-
-Copy the uiFiles folder to the location you want to run the program from.
-Depending on the features you need, copy v1,v2 or v3 to the same folder.
-For v3, also copy liveview.py to the same folder.
+* CameraControlsGUI.py - LiveView addition to preview the image before capture.
 
 ```
-chmod +x cameraui_v<x>.py
+chmod +x CameraControlsGUI.py
 ```
 
 ## Running the tests
@@ -100,7 +94,7 @@ $gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "0 0 820 
 Open the terminal Ctrl+Alt+T and follow the steps listed below
 ```
 $cd <folder to execute scripts from> (eg.$cd /home/pi/Desktop)
-$chmod +x cameraui_v<x>.py
+$chmod +x CameraControlsGUI.py
 ```
 You are all set to enjoy the program. CLICK AWAY!
 
