@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Photobox
 Path=/home/pi/Desktop
-Exec=/home/pi/Desktop/Photobox/CameraControlsGUI.py
+Exec=/home/pi/Desktop/Photobox/main.py
 Type=Application
 StartupNotify=false
 Terminal=false
