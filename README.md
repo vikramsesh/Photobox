@@ -153,9 +153,9 @@ Project Link: [https://github.com/vikramsesh/Photobox](https://github.com/vikram
 [contributors-shield]: https://img.shields.io/github/contributors/vikramsesh/Serial-output-data-parser?color=%230093FF
 [contributors-url]: https://github.com/vikramsesh/Serial-output-data-parser/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/vikramsesh/Photobox
-[forks-url]: https://github.com/vikramsesh/Serial-output-data-parser/network/members
+[forks-url]: https://github.com/vikramsesh/Photobox/network/members
 [issues-shield]: https://img.shields.io/github/issues/vikramsesh/Serial-output-data-parser
-[issues-url]: https://github.com/vikramsesh/Photoxox/issues
+[issues-url]: https://github.com/vikramsesh/Photobox/issues
 [license-shield]: https://img.shields.io/github/license/vikramsesh/Serial-output-data-parser
 [license-url]: https://github.com/vikramsesh/Photobox/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
