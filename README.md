@@ -2,9 +2,19 @@
 
 The program helps users control the capture images and removes the guesswork of the camera settings for specific food loads used. It was designed to keep the camera settings and the file naming metrics consistent across multiple fixtures. It also removes the tedious process of sharing the images with multiple users by sending the image to the user's email address once the image is captured. This software was created to aid personel with minimum technical knowledge about programming or camera operations.
 
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![GNU GENERAL PUBLIC LICENSE][license-shield]][license-url]
+
 ## Logo
 <img src="https://github.com/vikramsesh/Photobox/blob/master/Photobox%20Logo.png" width="300" height="300">
 
+### Built With
+
+* [PyQt](https://riverbankcomputing.com/software/pyqt/intro)
+* [Python](https://www.python.org/)
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
 ```
@@ -66,7 +76,7 @@ $sudo apt-get update
 $sudo apt-get upgrade
 ```
 
-### Installing
+### Installation
 
 Copy the uiFiles folder to the location you want to run the program from.
 Depending on the features you need, copy v1,v2 or v3 to the same folder.
@@ -76,7 +86,7 @@ For v3, also copy liveview.py to the same folder.
 chmod +x main.py
 ```
 
-## Running the tests
+## Tests
 
 Testing gphoto2 and camera interaction
 ```
@@ -105,13 +115,27 @@ You are all set to enjoy the program. CLICK AWAY!
 
 If you find a problem in the UI or with any dependencies or general bug reports, then please report it on the GitHub "issues" page (https://github.com/vikramsesh/Photobox/issues)
 
-## Authors
+<!-- CONTRIBUTING -->
+## Contributing
 
-**[Vikram Seshadri](https://github.com/vikramsesh)**
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
 ## License
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE v3 - see the [LICENSE.txt](https://github.com/vikramsesh/Photobox/blob/master/LICENSE.txt) file for details
+
+<!-- CONTACT -->
+## Contact
+
+[Vikram Seshadri](https://www.linkedin.com/in/vikramseshadri/)
+Project Link: [https://github.com/vikramsesh/Photobox](https://github.com/vikramsesh/Photobox)
 
 ## Acknowledgments
 
@@ -119,3 +143,20 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE v3 - see the [LICE
 * Raspberry Pi community
 * Python community
 * Co-workers
+* [Img Shields](https://shields.io)
+* [Microsoft PowerToys](https://github.com/microsoft/PowerToys)
+* [Choose an Open Source License](https://choosealicense.com)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/vikramsesh/Serial-output-data-parser?color=%230093FF
+[contributors-url]: https://github.com/vikramsesh/Serial-output-data-parser/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/vikramsesh/Photobox
+[forks-url]: https://github.com/vikramsesh/Serial-output-data-parser/network/members
+[issues-shield]: https://img.shields.io/github/issues/vikramsesh/Serial-output-data-parser
+[issues-url]: https://github.com/vikramsesh/Photoxox/issues
+[license-shield]: https://img.shields.io/github/license/vikramsesh/Serial-output-data-parser
+[license-url]: https://github.com/vikramsesh/Photobox/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/vikramseshadri/
