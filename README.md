@@ -4,7 +4,7 @@ The program helps users control the capture images and removes the guesswork of 
 
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
-[![GNU GENERAL PUBLIC LICENSE][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 
 ## Logo
 <img src="https://github.com/vikramsesh/Photobox/blob/master/Photobox%20Logo.png" width="300" height="300">
@@ -129,7 +129,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC LICENSE v3 - see the [LICENSE.txt](https://github.com/vikramsesh/Photobox/blob/master/LICENSE.txt) file for details
+Distributed under the MIT License. See [`LICENSE`](https://github.com/vikramsesh/Photobox/blob/master/LICENSE.txt) for more information.
 
 <!-- CONTACT -->
 ## Contact
