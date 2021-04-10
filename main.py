@@ -23,24 +23,19 @@ Filename check and fixed LiveView crashing issue
 
 """
 
-import os
 import logging
-import time
-import gphoto2 as gp
-from omxplayer.player import OMXPlayer
-import subprocess
+import os
 import re
-import liveview
+import subprocess
+import time
 
-import matplotlib.pyplot as plt
+import gphoto2 as gp
 import matplotlib.image as mpimg
-
+import matplotlib.pyplot as plt
 # GUI
-from PyQt5 import QtWidgets, uic, QtCore, QtGui
+from PyQt5 import QtWidgets, uic, QtCore
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QMessageBox
-
-from uiFiles import cameracontrols
 
 # variables
 flag = 0
@@ -317,7 +312,7 @@ class MainWindow(QtWidgets.QMainWindow):
             self.lineEdit_other.setEnabled(False)
 
     def live_view(self):
-        global bashCommand
+        global bashCommand, process
         makefile = """ mkfifo fifo.mjpg """
         fifofile_dir = os.path.join(os.path.abspath(os.curdir), "fifo.mjpg")
         print (fifofile_dir)
