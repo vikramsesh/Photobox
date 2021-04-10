@@ -49,8 +49,7 @@ filename = ""
 pic_dir = ""
 name_dir = ""
 new_dir = ""
-bashCommand = """gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "840 525 1680 1050 --alpha 230 fifo.mjpg & python /home/pi/Desktop/Photobox/liveview.py"""
-
+bashCommand = """gphoto2 --capture-movie --stdout> fifo.mjpg & omxplayer -o hdmi --win "840 525 1680 1050" --alpha 230 fifo.mjpg & python /home/pi/Desktop/Photobox/liveview.py"""
 
 class MainWindow(QtWidgets.QMainWindow):
 
@@ -206,12 +205,12 @@ class MainWindow(QtWidgets.QMainWindow):
         except BaseException:
             self.textEdit_message.setText(
                 "➊Check if camera is powered on.\n➋Remove lens cover.\n➌Turn off the camera and turn it back on.\n"
-                "➍Replace Battery.\n➎Place an object in front of the camera.\n ❻Free up storage")
+                "➍Replace Battery.\n➎Place an object in front of the camera.\n❻Free up storage.")
             QMessageBox.critical(
                 None,
                 "Lens Error",
                 "➊Check if camera is powered on.\n➋Remove lens cover.\n➌Turn off the camera and turn it back on.\n"
-                "➍Replace Battery.\n➎Place an object in front of the camera.\n ❻Free up storage")
+                "➍Replace Battery.\n➎Place an object in front of the camera.\n❻Free up storage.")
 
         filename = ""
 
@@ -321,20 +320,21 @@ class MainWindow(QtWidgets.QMainWindow):
         global bashCommand
         makefile = """ mkfifo fifo.mjpg """
         fifofile_dir = os.path.join(os.path.abspath(os.curdir), "fifo.mjpg")
+        print (fifofile_dir)
 
         try:
             self.textEdit_message.setText(
                 "If LiveView is not visible:\n‣Check if camera is powered on.\n‣Unplug and replug the Camera USB.")
             if not os.path.exists(fifofile_dir):
                 time.sleep(1)
-                process = subprocess.Popen(
+                process1 = subprocess.Popen(
                     makefile,
                     shell=True,
                     stdout=subprocess.PIPE,
                     stderr=subprocess.STDOUT,
                     close_fds=False)
 
-            subprocess.Popen(
+            process = subprocess.Popen(
                 bashCommand,
                 shell=True,
                 stdout=subprocess.PIPE,
@@ -343,7 +343,7 @@ class MainWindow(QtWidgets.QMainWindow):
             try:
                 output, error = process.communicate()
                 logging.info('liveView output:{}, error:{}'.format(output, error))
-            except Exception:
+            except BaseException:
                 logging.exception("Exception occurred", exc_info=True)
                 self.textEdit_message.setText(
                     "‣Check Camera Connection.\n➊Close the application.\n➋Unplug and re plug the camera USB cable.")
@@ -352,7 +352,7 @@ class MainWindow(QtWidgets.QMainWindow):
                     "LiveView Error",
                     "‣Check Camera Connection.\n➊Close the application.\n➋Unplug and re plug the camera USB cable.")
 
-        except Exception:
+        except BaseException:
             logging.exception("Exception occurred", exc_info=True)
             self.textEdit_message.setText(
                 "‣Check Camera Connection.\n➊Close the application.\n➋Unplug and re plug the camera USB cable.")

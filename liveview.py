@@ -1,7 +1,6 @@
 import os
 from omxplayer.player import OMXPlayer
 import subprocess
-import main
 
 # GUI
 from PyQt5 import QtWidgets, uic, QtCore
@@ -16,7 +15,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.do_init = QtCore.QEvent.registerEventType()
         QtWidgets.QMainWindow.__init__(self)
         super(MainWindow, self).__init__()
-        self.ui = uic.loadUi("/home/pi/Desktop/Photobox/uiFiles/liveviewclose.ui", self)
+        uiFiles = os.path.join(parent_dir, "uiFiles")
+        liveViewUI = os.path.join(uiFiles, "liveviewclose.ui")
+        self.ui = uic.loadUi(liveViewUI, self)
         self.move(840, 385)
 
         # Disable title bar
@@ -31,13 +32,14 @@ class MainWindow(QtWidgets.QMainWindow):
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT)
         output, error = process.communicate()
-        print(output)
-        cameraui_v3.MainWindow.camerasummary(self)
+        print(output, error)
         QtWidgets.qApp.closeAllWindows()
 
 
 if __name__ == '__main__':
     import sys
+    parent_dir = os.path.dirname(__file__)  # Current directory
+    
     app = QtWidgets.QApplication(sys.argv)
     app.setStyle('gtk2')
     widget = MainWindow()

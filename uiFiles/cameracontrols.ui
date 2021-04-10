@@ -79,7 +79,7 @@
      <bool>false</bool>
     </property>
     <property name="flat">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_foodload">
@@ -624,6 +624,7 @@ p, li { white-space: pre-wrap; }
     <property name="font">
      <font>
       <family>Piboto Light</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -829,6 +830,9 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>Other in Food load dropdown</string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
     </property>
     <property name="clearButtonEnabled">
      <bool>true</bool>
