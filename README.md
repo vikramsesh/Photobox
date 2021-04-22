@@ -53,7 +53,7 @@ $sudo make install
 ```
 $cd
 $sudo apt-get install gphoto2
-$pip install gphoto2
+$pip3 install gphoto2
 ```
 * qt5 and QtCreator
 ```
@@ -62,12 +62,12 @@ $sudo apt-get install qtcreator
 ```
 * Omxplayer python wrapper
 ```
-$ pip install omxplayer-wrapper
+$ pip3 install omxplayer-wrapper
 ```
 
 * Matplotlib
 ```
-$ pip install matplotlib
+$ pip3 install matplotlib
 ```
 
 Update and Upgrade the libraries
